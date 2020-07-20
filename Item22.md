@@ -4,7 +4,7 @@
 
 클래스가 어떤 인터페이스를 구현한다는 것은 **자신의 인스턴스로 무엇을 할 수 있는지를 클라이언트에 얘기해주는 것**이다. 인터페이스는 오직 이 이 용도로만 사용해야 한다.
 
-</br >
+
 
 ## 상수 인터페이스(안좋은 예)
 
@@ -14,7 +14,7 @@
 
 다음 코드는 상수 인터페이스 안티패턴이다.
 
-~~~java
+```java
 public interface PhysicalConstants {
     // 아보가드로 수 (1/몰)
     static final double AVOGARDROS_NUMBER = 6.022_140_857e27;
@@ -25,7 +25,7 @@ public interface PhysicalConstants {
     // 전자 질량 (kg)
     static final double ELECTRON_MASS = 9.109_383_56e-31;
 }
-~~~
+```
 
 ### 문제점
 
@@ -33,7 +33,7 @@ public interface PhysicalConstants {
 - 클래스가 어떤 상수 인터페이스를 사용하던 사용자에게 아무런 의미가 없다. 오히려 혼란을 주기도 하거나, 이 상수들에 종속되게 한다.
 - 다음 릴리즈에서 이 상수들을 쓰지 않더라도 바이너리 호환성을 위해 여전히 상수 인터페이스를 구현하고 있어야 한다.
 
-</br >
+
 
 ## 상수 공개를 위한 선택지
 
@@ -45,7 +45,7 @@ public interface PhysicalConstants {
 
 - 인스턴스화할 수 없는 **유틸리티 클래스에 담아 공개**
 
-  ~~~
+  ```java
   public class PhysicalConstants {
       private PhysicalConstants() {} //인스턴스화 방지
   
@@ -58,9 +58,9 @@ public interface PhysicalConstants {
       // 전자 질량 (kg)
       static final double ELECTRON_MASS = 9.109_383_56e-31;
   }
-  ~~~
+  ```
 
-</br >
+
 
 ## 결론
 
