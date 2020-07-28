@@ -4,7 +4,7 @@
 
 - 다른 클래스 안에 정의된 클래스를 말한다.
 - **중첩 클래스는 자신을 감싼 바깥 클래스에서만 쓰여야 하며, 그 외의 쓰임새가 있다면 톱레벨 클래스로 만들자**
-- [중첩 클래스]([https://github.com/BangKiHyun/collect-knowledge/blob/master/Java/%EC%A4%91%EC%B2%A9%20%ED%81%B4%EB%9E%98%EC%8A%A4(Nested%20Class).md](https://github.com/BangKiHyun/collect-knowledge/blob/master/Java/중첩 클래스(Nested Class).md)
+- [중첩 클래스](https://github.com/BangKiHyun/collect-knowledge/blob/master/Java/%EC%A4%91%EC%B2%A9%20%ED%81%B4%EB%9E%98%EC%8A%A4(Nested%20Class).md)
 
 ## 정적 멤버 클래스(static)
 
