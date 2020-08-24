@@ -237,7 +237,7 @@ public class Stack<E> {
 
    > 힙 오염(heap pollution)
    >
-   > 매개변수화 타입의 변수(ex: List<String<S>>)가 타입이 다른 객체를 참조할때 발생
+   > 매개변수화 타입의 변수(ex: List<String>)가 타입이 다른 객체를 참조할때 발생
 
    - 두 번째 방법은 힙 오염이 발생하지 않아 이를 더 선호하는 프로그래머들이 있다.
 
